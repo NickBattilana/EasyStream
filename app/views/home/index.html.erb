@@ -1,4 +1,19 @@
 <html>
-<h1>Hello World</h1>
+<head>
+<script type="text/javascript">
+function show_prompt()
+{
+var num=prompt("Please enter how many frames you would like to display (from 1 to 5)","3");
+if (num==1)
+  {
+  		window.location = "/oneframe.html.erb"
+  }
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="show_prompt()" value="Click to Begin" />
+
+</body>
 </html>
-<%= @contents %>
